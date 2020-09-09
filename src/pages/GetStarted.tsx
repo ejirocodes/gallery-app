@@ -2,9 +2,9 @@ import React from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar,  IonGrid, IonRow, IonCol, IonButton } from '@ionic/react';
 // import { IonMenu,  IonList, IonItem, IonRouterOutlet } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
-import './Tab1.css';
+import './GetStarted.css';
 
-const Tab1: React.FC = () => {
+const GetStarted: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
@@ -18,9 +18,9 @@ const Tab1: React.FC = () => {
             <IonTitle size="large">Photified</IonTitle>
           </IonToolbar>
         </IonHeader>
-          <IonGrid>
-              <IonRow>
-                  <IonCol size="12"> <IonButton href="#">Get Started</IonButton></IonCol>
+          <IonGrid class="img-grid">
+              <IonRow  class="img-row">
+                 <IonButton href="/gallery" class="cta-btn" expand="full" color="warning">Get Started</IonButton>
               </IonRow>
           </IonGrid>
         {/*<ExploreContainer name="Tab 10 page" />*/}
@@ -29,4 +29,4 @@ const Tab1: React.FC = () => {
   );
 };
 
-export default Tab1;
+export default GetStarted;

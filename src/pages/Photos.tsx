@@ -8,9 +8,9 @@ import {IonContent, IonFab,
 import { camera, trash, close } from 'ionicons/icons';
 import ExploreContainer from '../components/ExploreContainer';
 import {usePhotoGallery} from '../hooks/usePhotoGallery';
-import './Tab2.css';
+import './About.css';
 
-const Tab2: React.FC = () => {
+const Photos: React.FC = () => {
 
     const {takePhoto, photos} =  usePhotoGallery();
   return (
@@ -46,4 +46,4 @@ const Tab2: React.FC = () => {
   );
 };
 
-export default Tab2;
+export default Photos;
